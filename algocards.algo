@@ -1,0 +1,13 @@
+PROCEDURE insert_sort(var arr: array of interger, n: integer)
+VAR
+  i, j: integer
+BEGIN
+  For i From 1 to n -1 do
+  j:= i -1
+WHILE 
+(j>= 0 And arr[j]>arr[i])
+  arr[j]:= arr[j+1]
+  j:= j -1
+END WHILE
+END For
+END
